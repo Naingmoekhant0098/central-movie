@@ -2,7 +2,7 @@
   "name": "movieappwithreact",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://Naingmoekhant0098.github.io/react_movie_blog",
+  "homepage" : "http://Naingmoekhant0098.github.io/react_movie",
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",

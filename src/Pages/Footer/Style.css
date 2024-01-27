@@ -1,0 +1,18 @@
+.footerContainer{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+p a,p{
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: all .3s ease;
+}
+p a:hover{
+    color:rgb(214, 89, 11) ;
+}
+h6{
+    font-size: 18px;
+}

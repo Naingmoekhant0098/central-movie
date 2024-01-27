@@ -1,0 +1,71 @@
+.posterImage{
+    width: 200px;
+    height: 300px;
+}
+.movieCard{
+    width: 200px;
+}
+.posterImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .posterImage img:hover{
+        backdrop-filter: blur(10px);
+ }
+.Movies{
+    margin-top: 30px;
+    
+}
+.item{
+    text-decoration: none;
+}
+.contents{
+    margin-top: 25px;
+    color: white;
+}
+.contents h5{
+    font-size: 16px;
+}
+.contents h6{
+    font-size: 12px;
+    opacity: .6;
+}
+.posterImage{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    bottom: -17px;
+    left: 5px;
+    width: 50px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .posterImage{
+        width: 150px;
+        height: 200px;
+    }
+    .circle{
+        width: 40px;
+    }
+     
+    
+    .contents h5{
+        font-size: 12px;
+    }
+    .contents h6{
+        font-size: 10px;
+        opacity: .6;
+    }
+    .contents{
+        margin-top: 20px;
+        
+    }
+    .Movies{
+       padding-left: 10px;
+    }
+   
+}

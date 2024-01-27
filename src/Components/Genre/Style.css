@@ -1,0 +1,25 @@
+.genres{
+    position:absolute;
+    top: 8px;
+    right: 0;
+    display: flex;
+    color: white;
+}
+.genres .genre{
+    font-size: 10px;
+    border-radius: 10px;
+    padding:3px 5px;
+    margin: 0px 5px;
+    background-color: rgb(214, 89, 11) ;
+}
+
+@media only screen and (max-width: 600px) {
+    .genres .genre{
+        font-size: 9px;
+      
+    }
+
+}
+
+
+ 

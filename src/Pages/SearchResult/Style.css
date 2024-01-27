@@ -1,0 +1,62 @@
+.searchResults{
+    padding-top: 140px;
+}
+
+.searchContainer{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.Results{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 25px;
+}
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.more button{
+    border: 0px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color:  rgb(214, 89, 11) ;
+    color: white;
+    cursor: pointer;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .movieCard{
+       width: 100%;
+        
+    }
+    .Results{
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+    }
+    .contents{
+        width: 150px;
+    }
+    .posterImage{
+        width: 150px;
+        height: 220px;
+    }
+    .more button{
+         
+        font-size: 12px;
+         
+    }
+    .searchResults{
+        text-align: center;
+    }
+
+}
+ 
+    
+   

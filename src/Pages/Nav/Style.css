@@ -1,0 +1,137 @@
+.showNav{
+    background-color: black !important;
+}
+
+.hideNav{
+    transform: translateY(-100px)!important;
+}
+.topNav{
+    background-color: rgba(241, 225, 225, 0.041);
+    backdrop-filter: blur(5px);   
+}
+
+.navbar{
+    background-color: rgba(241, 225, 225, 0.041);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: all .3s ease;
+    z-index: 1000;
+}
+.Links{
+    display: flex;
+}
+.headerTitle{
+    text-decoration: none;
+    font-size: 18px ;
+    font-weight: 500;
+}
+.Links .link {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    margin: 0px 15px;
+    font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
+    color: white;
+    
+}
+.Links .link:hover{
+    color:rgb(214, 89, 11) ;
+   
+}
+.headerImg{
+    width: 60px;
+    height: 65px;
+     
+    
+}
+.navBar{
+    display: none;
+    cursor: pointer;
+}
+.searchForm{
+    display: flex;
+}
+.searchForm input{
+    width: 300px;
+    
+}
+
+.searchForm.active{
+    display: flex !important;
+}
+.Links.showNav{
+    display: block !important;
+}
+
+
+.searchForm input{
+    padding: 5px 20px;
+     border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+    width: 200px;
+    outline: none !important;
+    border: 0px;
+    font-size: 14px;
+}
+
+.searchForm .btn{
+    border: 0px;
+    border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    cursor:pointer ;
+    font-size: 20px;
+    background-color:rgb(214, 89, 11) ;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Links{
+    margin-top: 20px;
+    display: none;
+    width: 100%;
+    z-index: 10;
+    flex-direction: column;
+  }
+  .link{
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .navBar{
+   
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .headerImg{
+    width: 50px;
+    height: 55px;
+}
+.header{
+    position: relative;
+}
+
+.header .searchForm{
+     position: absolute;
+     top: 100px;
+     left: 80px;
+     
+     display: none;
+     z-index: 1;
+     background-color: inherit;
+
+}
+.searchForm input{
+    width: 300px;
+    
+    
+}
+
+
+ 
+     
+  }

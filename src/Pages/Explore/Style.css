@@ -1,0 +1,35 @@
+.searchResults{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+.selectContainer{
+display: flex;
+}
+.sort{
+    color: black;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+.sort :focus{
+    outline: 0px;
+    border: 0px;
+}
+.searchResulttitle h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+ 
+
+@media only screen and (max-width: 600px) {
+.searchResults{
+    flex-direction: column;
+}
+.searchResulttitle h5{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+}

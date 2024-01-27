@@ -1,0 +1,37 @@
+.CaroHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabs{
+    display: flex;
+    align-items: center;
+}
+.tabs .tab{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+.CaroHeader h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.active {
+    background-color: rgb(214, 89, 11) ;
+    
+}
+@media only screen and (max-width: 600px) {
+
+    .CaroHeader h3{
+        font-size: 20px;
+    }
+    .tabs .tab{
+        
+        padding: 5px 10px;
+        font-size: 12px;
+        
+    }
+}
+

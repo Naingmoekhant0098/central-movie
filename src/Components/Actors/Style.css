@@ -1,0 +1,34 @@
+.cast{
+    width: 80px;
+    height: 80px;
+}
+.cast img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.castContainer h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .castContainer{
+    margin: 50px 0px;
+  }
+  .casts{
+    width: 100%;
+  
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .castContainer h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    .cast{
+        width: 60px;
+        height: 60px;
+    }
+  }

@@ -389,11 +389,12 @@ border-radius: 50%;
   }
   .Director {
     display: flex;
-    width: 100%;
+    width: 100%!important;
+    
     flex-direction: column;
   }
   .directors {
-    width: 100%;
+    width: 100%!important;
   }
   .recommedationContainer h4 {
     font-size: 20px;

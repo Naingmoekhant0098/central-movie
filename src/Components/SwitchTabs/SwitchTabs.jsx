@@ -10,7 +10,7 @@ const SwitchTabs = ({data , onChangeTab , title}) => {
     
   return (
     <div className='CaroHeader'>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
 
         <div className='tabs'>
         {

@@ -13,15 +13,15 @@ const Detail = () => {
     const {mediaType,id} = useParams();
     const {data,loading} = UseFetch(`/${mediaType}/${id}/videos`)
     const {data : credits , loading:creditLoaing} =  UseFetch(`/${mediaType}/${id}/credits`)
-     
+      
   return (
     <div>
         <DetailBanner video={data?.results?.[0]} crews={credits?.crew} />
         <div className='belowSection'>
-          <Actors data={credits?.cast} />
-          <Trailers videos={data?.results} />
-            <Recommend mediaType={mediaType} id={id} />
-            <Similar mediaType={mediaType} id={id} />
+          <Actors data={credits?.cast} loading={loading} />
+          <Trailers videos={data?.results} loading={loading} />
+            <Recommend mediaType={mediaType} id={id}  loading={loading}/>
+            <Similar mediaType={mediaType} id={id}loading={loading} />
         </div>
     </div>
   )

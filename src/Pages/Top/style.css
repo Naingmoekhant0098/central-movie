@@ -1,0 +1,90 @@
+.topMovie{
+    width: 80%;
+    height: 400px;
+    align-items: center;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+.leftImageSection img{
+    width: 500px;
+    height: 300px;
+
+}
+.rightContentSection h4{
+font-size: 25px;
+font-weight: 900;
+}
+.rightContentSection .infos{
+    font-size: 24px;
+    display: flex;
+    gap: 30px;
+}
+.rightContentSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rightContentSection .infos span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botText
+{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 800;
+    opacity: .7;
+}
+ .topIcon{
+    font-size: 16px;
+
+ }
+ .total{
+    font-weight: 900;
+ }
+ .pts{
+    display: none;
+ }
+ /* .gnn {
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    background-color: rgb(91, 83, 78);
+  } */
+
+ @media only screen and (max-width: 600px) {
+     .topMovie{
+        width: 100%;
+        padding: 20px;
+     }
+     .pts{
+        display: block;
+
+     }
+     .cvs{
+        display: none;
+     }
+     .ov{
+        display: none;
+     }
+     .leftImageSection img{
+        width: 180px;
+        height: 250px;
+     }
+     .rightContentSection .infos{
+        font-size: 16px;
+        gap: 10px;
+    }
+    .botText
+{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    opacity: .7;
+}
+
+}

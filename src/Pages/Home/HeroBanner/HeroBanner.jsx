@@ -3,26 +3,25 @@ import { UseFetch } from "../../../Hooks/UseFetch";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { CiSearch } from "react-icons/ci";
- import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Style.css";
 const HeroBanner = () => {
   const [bg, setBg] = useState();
-  const [query,setQuery] = useState();
+  const [query, setQuery] = useState();
   const { url } = useSelector((state) => state.home);
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const { data, loading, error } = UseFetch("/movie/upcoming");
 
   useEffect(() => {
     const bgd =
-      url.backdrop +
-      data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
+      url?.backdrop +
+      data.results?.[Math.floor(Math.random() * 20)].backdrop_path;
     setBg(bgd);
-  },[data]);
+  }, [data, url]);
 
- const searchSubmit=()=>{
-  navigate(`/search/${query}`)
-
- }
+  const searchSubmit = () => {
+    navigate(`/search/${query}`);
+  };
 
   return (
     <div className="Banner">
@@ -36,25 +35,39 @@ const navigate = useNavigate();
 
       <div className="wrapper">
         <div className="contentWrapper">
-          <h1>Welcome</h1>
-          <p>
-            Million of movies , Tv shows and people to discover . Explore now
-          </p>
+          <div
+            className=" d-flex flex-column"
+            style={{ width: "450px", letterSpacing: ".02em", gap: "12px" }}
+          >
+            <span
+              style={{
+                color: "rgb(214, 89, 11)",
+                textTransform: "uppercase",
+                fontWeight: 900,
+              }}
+            >
+              Ulitmated movies to watch
+            </span>
+            <h1 className="" style={{ fontSize: "32px", fontWeight: 900 }}>
+              Movies That You Love To Watch
+            </h1>
+            <p className="" style={{ opacity: 0.6, fontSize: "16px" }}>
+              Million of movies , Tv shows and people to discover . Explore now
+            </p>
+          </div>
           <div className="search d-flex">
             <input
               type="search"
-              
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
-              onKeyUp={(e)=>setQuery(e.target.value)}
+              onKeyUp={(e) => setQuery(e.target.value)}
+              
             />
 
-            
-              <button className="searchBtn" onClick={()=>searchSubmit()}>
+            <button className="searchBtn" onClick={() => searchSubmit()}>
               <CiSearch />
-              </button>
-           
+            </button>
           </div>
         </div>
       </div>

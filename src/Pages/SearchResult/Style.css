@@ -13,6 +13,11 @@
     
     gap: 25px;
 }
+ .sort .css-1nmdiq5-menu{
+    position: absolute;
+    z-index: 100!important;
+     
+ }
 .more{
     display: flex;
     align-items: center;
@@ -22,7 +27,7 @@
 .more button{
     border: 0px;
     padding: 5px 30px;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 15px;
     font-weight: 500;
     background-color:  rgb(214, 89, 11) ;

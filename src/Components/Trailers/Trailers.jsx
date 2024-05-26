@@ -5,12 +5,13 @@ import {FiPlayCircle} from 'react-icons/fi'
 import { useState } from "react";
 import VideoPopUp from "../VideoPopUp/VideoPopUp";
 import {IoIosCloseCircleOutline} from 'react-icons/io'
-const Trailers = ({ videos }) => {
+const Trailers = ({ videos,loading }) => {
     const [PopUpClose ,setPopUpClose] = useState(false);
     const [video , setVideo ] = useState()
   return (
+    videos?.length > 0 &&
     <div className="trailersContainer">
-      <h4>Official Videos</h4>
+      {!loading && <h4>Official Videos</h4>}
       <div className="trailers">
         <Swiper
           loop={true}
@@ -40,7 +41,7 @@ const Trailers = ({ videos }) => {
                
               return (
                 
-                <div>
+                <div key={index}>
                     <SwiperSlide  key={index}>
                   <div className="trailer">
                     <img src={tr} alt="" />

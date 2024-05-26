@@ -12,7 +12,7 @@ const Trending = () => {
         setEndPoint(tab==='Daily' ? 'day' : 'week');
     }
   return (
-    <div className='carouselSection'>
+    <div className='carouselSection '>
         <div className='carouselHeader'>
             <SwitchTabs title='Trending' data={['Daily','Weekly']} onChangeTab={onChangeTab} />
             <Carousel data={data} endPoint={endPoint} />

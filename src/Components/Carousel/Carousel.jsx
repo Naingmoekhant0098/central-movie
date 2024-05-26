@@ -7,10 +7,7 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 import MovieCard from "../MovieCard/MovieCard";
 
-
 const Carousel = ({ data, endPoint }) => {
-
-
   return (
     <div className="Movies ">
       <Swiper
@@ -19,29 +16,27 @@ const Carousel = ({ data, endPoint }) => {
         breakpoints={{
           375: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           640: {
             slidesPerView: 2,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 6,
-            spaceBetween: 40,
+            slidesPerView: 5,
+            spaceBetween: 30,
           },
         }}
       >
         {data?.results &&
           data?.results.map((item, index) => {
-        
-
             return (
-              <SwiperSlide className="item" key={index}>
-             <MovieCard item={item} endPoint={endPoint} />
+              <SwiperSlide className="item" key={index} >
+                <MovieCard item={item} endPoint={endPoint} index={index} />
               </SwiperSlide>
             );
           })}

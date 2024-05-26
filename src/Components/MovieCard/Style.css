@@ -1,2 +1,11 @@
  
- 
+ .tooltipBox{
+     display: flex;
+     flex-direction: column;
+     padding: 10px!important;
+    
+ }
+ .maintool{
+    width: 300px!important;
+    text-wrap: wrap;
+ }

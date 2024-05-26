@@ -138,12 +138,12 @@ const DetailBanner = ({ video, crews }) => {
             </TabList>
 
             <TabPanel>
-              <div className="OverView px-2">
+              <div className="OverView px-2" style={{overflow: 'hidden'}}>
                 <h5 className=" mb-2">Overview</h5>
                 <div className="overviewText ">{data?.overview}</div>
               </div>
 
-              <div className="stsRelease px-2">
+              <div className="stsRelease px-2 ">
                 <div className="status">
                   <span className="s"> Status : </span>
                   <span className="stsAns">{data?.status}</span>

@@ -42,13 +42,14 @@
      align-items: center;
      justify-content: center;
      top: 0;
-     
+    
 }
 .contentWrapper{
     width: 500px;
     text-align: center;
     position: relative;
     margin: 0 auto;
+    
 }
 .contentWrapper h1{
     font-size: 70px;
@@ -106,7 +107,7 @@ border-bottom-right-radius: 20px;
 }
 .contentWrapper{
     width: 400px;
-   
+   margin-top: -30px;
 }
 .search .searchBtn{
     

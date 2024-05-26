@@ -1,8 +1,7 @@
 {
   "name": "movieappwithreact",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://Naingmoekhant0098.github.io/react_movie",
+ 
   "dependencies": {
     "@floating-ui/react-dom": "^2.0.9",
     "@reduxjs/toolkit": "^2.1.0",

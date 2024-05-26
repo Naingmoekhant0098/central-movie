@@ -36,8 +36,8 @@ const HeroBanner = () => {
       <div className="wrapper">
         <div className="contentWrapper">
           <div
-            className=" d-flex flex-column"
-            style={{ width: "450px", letterSpacing: ".02em", gap: "12px" }}
+            className=" w-[450px] d-flex flex-column px-2"
+            style={{  letterSpacing: ".02em", gap: "12px" }}
           >
             <span
               style={{
@@ -48,7 +48,7 @@ const HeroBanner = () => {
             >
               Ulitmated movies to watch
             </span>
-            <h1 className="" style={{ fontSize: "32px", fontWeight: 900 }}>
+            <h1 className=" " style={{ fontSize: "32px", fontWeight: 900 }}>
               Movies That You Love To Watch
             </h1>
             <p className="" style={{ opacity: 0.6, fontSize: "16px" }}>

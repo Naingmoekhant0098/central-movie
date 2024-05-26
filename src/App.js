@@ -61,7 +61,7 @@ const App = () => {
         
         <Route path="/" element={<ShareLayout />}>
 
-          <Route index element={<Home />} />
+          <Route  index element={<Home />} />
           <Route path="/explore/:mediaType" element={<Explore />} />
           <Route path="/search/:query" element={<SearchResult />} />
           <Route path="/:mediaType/:id" element={<Detail />} />

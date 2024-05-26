@@ -22,7 +22,7 @@ const Ads = () => {
         <h2 className="adstitle">
           Download our app and start your free trail to get started today!
         </h2>
-        <p className=" text-center" style={{ opacity: 0.6 }}>
+        <p className=" text-center " style={{}}>
           End-to-end payments and financial management in a single solution
         </p>
         <div className="mx-auto btns">

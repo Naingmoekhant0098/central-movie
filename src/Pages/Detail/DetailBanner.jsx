@@ -138,12 +138,12 @@ const DetailBanner = ({ video, crews }) => {
             </TabList>
 
             <TabPanel>
-              <div className="OverView">
+              <div className="OverView px-2">
                 <h5>Overview</h5>
                 <div className="overviewText">{data?.overview}</div>
               </div>
 
-              <div className="stsRelease">
+              <div className="stsRelease px-2">
                 <div className="status">
                   <span className="s"> Status : </span>
                   <span className="stsAns">{data?.status}</span>
@@ -162,7 +162,7 @@ const DetailBanner = ({ video, crews }) => {
               </div>
               <hr />
 
-              <div className="Director">
+              <div className="Director px-2">
                 <div className="preName">
                   {director?.length > 1 ? "Directors" : "Director"}
                 </div>
@@ -182,7 +182,7 @@ const DetailBanner = ({ video, crews }) => {
               </div>
               <hr />
 
-              <div className="Director">
+              <div className="Director px-2">
                 <div className="preName">
                   {writer?.length > 1 ? "Writers " : "Writer "}
                 </div>

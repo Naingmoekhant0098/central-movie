@@ -33,7 +33,7 @@ const Top = () => {
         </span>
         
 <div>
-<h4>{topMovie?.title || topMovie?.original_title
+<h4 className=" text-sm">{topMovie?.title || topMovie?.original_title
 }</h4>
 {<Genre ids={topMovie?.genre_ids?.slice(0, 1)}/>}
 </div>

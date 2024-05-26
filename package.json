@@ -2,6 +2,7 @@
   "homepage": "https://naingmoekhant0098.github.io/central-movie",
   "name": "movieappwithreact",
   "version": "0.1.0",
+  "private" : false,
   "dependencies": {
     "@floating-ui/react-dom": "^2.0.9",
     "@reduxjs/toolkit": "^2.1.0",

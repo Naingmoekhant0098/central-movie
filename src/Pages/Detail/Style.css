@@ -63,13 +63,17 @@
 }
 .Detailgenres {
   display: flex;
+  width: full;
+  flex-wrap: wrap;
+gap: 5px;
 }
 .Dgenre {
   font-size: 12px;
   border-radius: 5px;
   padding: 5px 10px;
-  margin: 0px 5px;
+  ;
   background-color: rgba(43, 41, 41, 0.73);
+  
 }
 .ratingAndTrailer {
   display: flex;

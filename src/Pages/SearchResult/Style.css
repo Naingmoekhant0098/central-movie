@@ -60,6 +60,16 @@
     .searchResults{
         text-align: center;
     }
+    .selectContainer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+         
+        justify-content: center;
+    }
+    .searchContainer .date{
+        margin-top: 10px;
+    }
 
 }
  

@@ -139,8 +139,8 @@ const DetailBanner = ({ video, crews }) => {
 
             <TabPanel>
               <div className="OverView px-2">
-                <h5>Overview</h5>
-                <div className="overviewText">{data?.overview}</div>
+                <h5 className=" mb-2">Overview</h5>
+                <div className="overviewText ">{data?.overview}</div>
               </div>
 
               <div className="stsRelease px-2">

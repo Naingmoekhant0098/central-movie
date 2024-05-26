@@ -101,12 +101,12 @@ const SearchResult = () => {
           <div className="searchResulttitle">
             <h5 className="">
               Search {data.total_results > 1 ? "results" : "result"} of "{query}
-              ""
+              "
             </h5>
           </div>
         ) : (
           <div className="searchResultNotFound">
-            <h6>Search Result No Found</h6>
+            <h6>Results No Found</h6>
           </div>
         )}
         <div className="selectContainer ">
@@ -141,7 +141,7 @@ const SearchResult = () => {
             getOptionValue={(gen) => gen.value}
             placeholder="Select SortBy"
             onChange={onChange}
-            className="sort"
+            className="sort date"
           />
         </div>
       </div>

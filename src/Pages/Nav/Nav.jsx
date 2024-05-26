@@ -24,8 +24,7 @@ const Nav = () => {
 
   const searchSubmit=()=>{
     navigate(`/search/${query}`)
-   
-  
+  setShow(false)
    }
   const constrolScroll=()=>{
    
@@ -68,7 +67,7 @@ const Nav = () => {
             <Link to={''} className="link" onClick={()=> setShowNav(false)}> About</Link>
           </div>
           {
-           <form className={`input-group w-auto searchForm ${show && 'active'}`}>
+           <div className={`input-group w-auto searchForm ${show && 'active'}`}>
             <input
               type="search"
               class=""
@@ -78,7 +77,7 @@ const Nav = () => {
               onKeyUp={(e)=>setQuery(e.target.value)}
             />
              <button className="btn" onClick={()=>searchSubmit()}><CiSearch/></button>
-          </form> 
+          </div> 
           }
           
         </div>

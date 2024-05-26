@@ -424,20 +424,14 @@
     width: 100% !important;
     display: flex;
     flex-wrap: wrap;
-
+ 
     gap: 10px;
   }
-  .panel {
-    width: 100% !important;
-  }
+   
   .imagesss img {
-    width: 46%;
+    width: 45%;
     margin: 0 auto;
   }
 
-  .videoss {
-    width: 100% !important;
-
-    gap: 15px;
-  }
+ 
 }

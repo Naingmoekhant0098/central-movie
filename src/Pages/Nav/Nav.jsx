@@ -18,12 +18,13 @@ const Nav = () => {
   }
   const navHandler =()=>{
     setShowNav(!showNav)
-    setShow(show)
+    setShow(false)
     
   }
 
   const searchSubmit=()=>{
     navigate(`/search/${query}`)
+   
   
    }
   const constrolScroll=()=>{
@@ -61,10 +62,10 @@ const Nav = () => {
           </div>
 
           <div className={`Links mx-auto ${showNav && 'showNav'}`}>
-            <Link to={"/explore/movie"} className="link"> Movie</Link>
-            <Link to={"/explore/tv"} className="link"> Tv Series</Link>
+            <Link to={"/explore/movie"} className="link" onClick={()=> setShowNav(false)}> Movie</Link>
+            <Link to={"/explore/tv"} className="link" onClick={()=> setShowNav(false)}> Tv Series</Link>
              
-            <Link to={''} className="link"> About</Link>
+            <Link to={''} className="link" onClick={()=> setShowNav(false)}> About</Link>
           </div>
           {
            <form className={`input-group w-auto searchForm ${show && 'active'}`}>

@@ -68,10 +68,10 @@
   .contents h5 {
     width: 100%;
     text-wrap: wrap;
-    display: none;
+    
   }
   .movieCardOne {
-    width: 45%;
+    width: 45%!important;
   }
   .circle {
     width: 50px;

@@ -120,23 +120,23 @@ border-bottom-left-radius: 20px;
 }
 
 .header .searchForm{
+     
      position: absolute;
      top: 80px;
      left: 50%;
-     width: auto!important;
+     width: 100%!important;
      transform: translateX(-50%);
-    
+     
      display: none;
      z-index: 1;
-     background-color: inherit;
+    
 
 }
 .searchForm .btn{
     padding: 5px 10px;
 }
 .searchForm input{
-    width: 180px;
-    
+        flex: 1;    
     
 }
 

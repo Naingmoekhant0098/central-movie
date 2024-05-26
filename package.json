@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Naingmoekhant0098.github.io/central-movie",
+  "homepage": "https://naingmoekhant0098.github.io/central-movie",
   "name": "movieappwithreact",
   "version": "0.1.0",
   "dependencies": {
@@ -31,10 +31,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+    
+    
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"

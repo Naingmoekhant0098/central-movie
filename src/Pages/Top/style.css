@@ -12,10 +12,13 @@
 
 }
 .rightContentSection h4{
-font-size: 25px;
+font-size: 20px!important;
 font-weight: 900;
 }
+ 
 .rightContentSection .infos{
+   
+   
     font-size: 24px;
     display: flex;
     gap: 30px;
@@ -65,11 +68,19 @@ font-weight: 900;
         display: block;
 
      }
+     .rightContentSection h4{
+      font-size: 16px;
+      line-height: 1.5;
+     }
+     
      .cvs{
         display: none;
      }
      .ov{
         display: none;
+     }
+     .rightContentSection .infos .total{
+      font-size: 15px;
      }
      .leftImageSection img{
         width: 180px;

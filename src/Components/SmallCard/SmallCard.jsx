@@ -22,12 +22,13 @@ const SmallCard = ({ item, endPoint, index }) => {
     : noPoster;
 
   return (
-    <div>
+    
       <Link
         to={`/${item?.media_type || endPoint}/${item?.id}`}
-        style={{ textDecoration: "none", flexWrap: "wrap-reverse" }}
+        style={{ textDecoration: "none" , position : 'relative' }}
+        className="movieCardOne"
       >
-        <div className={`movieCard1 shadow movieCard${item?.id}`}>
+        <div className={`  movieCard${item?.id}`}>
           <div className="posterImage1">
             <img
               src={posterUrl}
@@ -107,7 +108,7 @@ const SmallCard = ({ item, endPoint, index }) => {
           </Tooltip>
         </div>
       </Link>
-    </div>
+     
   );
 };
 

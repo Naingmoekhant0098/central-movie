@@ -1,89 +1,90 @@
-.posterImage1{
-    width: 100%;
-    height: 250px;
-    
-  
+.posterImage1 {
+  width: 100%!important;
+  height: 250px;
 }
-.movieCard1{
-    width: 180px;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px auto;
-   
+.movieCardOne {
+  width: 180px !important;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
 }
- 
-  
-.posterImage1 img{
-    width: 100%!important;
-    height: 100%!important;
-    object-fit: cover;
-    border-radius: 5px;
-    /* backdrop-filter: blur(20px); */
-    
+
+.contents h5 {
+  width: 100%;
+
+  text-wrap: wrap;
+  text-overflow: initial;
 }
- 
-.Movies{
-    margin-top: 15px;
-    
+
+.posterImage1 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 5px;
+  /* backdrop-filter: blur(20px); */
 }
-.item{
-    text-decoration: none;
-    padding: 20px 0px;
-     
+
+.Movies {
+  margin-top: 15px;
 }
-.contents{
-    margin-top: 15px;
-    width: 100%!important;
-    color: white;
-    
+.item {
+  text-decoration: none;
+  padding: 20px 0px;
 }
-.contents h5 , .tooltipBox h5{
-    font-size: 16px;
+.contents {
+  margin-top: 15px;
+  width: 100% !important;
+  color: white;
 }
-.contents h6{
-    font-size: 12px;
-    opacity: .6;
-    display: flex;
-    align-items: center;
-  
-    width: 100%;
+.contents h5,
+.tooltipBox h5 {
+  font-size: 16px;
 }
-.posterImage{
-    position: relative;
+.contents h6 {
+  font-size: 12px;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
 }
  
 
 @media only screen and (max-width: 600px) {
-    
-    .posterImage1{
-        width: 100%!important;
-        height: 280px!important;
-         
-    }
-    .movieCard1{
-        width: 200px;
-        
-    }
-     
-    .circle{
-        width: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-    }
-      
-      
-    
-    .contents h5{
-        font-size: 16px;
-    }
-    .contents h6{
-        font-size: 10px;
-        opacity: .6;
-    }
-    
-   
-   
+  .posterImage1 {
+    width: 100% !important;
+    height: 280px !important;
+  }
+
+  .posterImage1 img {
+    width: 100% !important;
+    height: 100% !important;
+
+    border-radius: 5px;
+    /* backdrop-filter: blur(20px); */
+  }
+  .contents h5 {
+    width: 100%;
+    text-wrap: wrap;
+    display: none;
+  }
+  .movieCardOne {
+    width: 45%;
+  }
+  .circle {
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  .contents h5 {
+    font-size: 16px;
+  }
+  .contents h6 {
+    font-size: 10px;
+    opacity: 0.6;
+  }
 }

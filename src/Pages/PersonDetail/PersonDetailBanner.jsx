@@ -66,7 +66,7 @@ const PersonDetailBanner = ({ detail, images, movies, series, loading }) => {
             </div>
             <div className="status1">
               <span className="s"> Place Of Birth: </span>
-              <span className="stsAns">{detail?.place_of_birth}</span>
+              <span className="stsAns" style={{width :'120px'}}>{detail?.place_of_birth}</span>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ const PersonDetailBanner = ({ detail, images, movies, series, loading }) => {
             )}
           </div>
 
-          <Tabs>
+          <Tabs classID="">
             <TabList className="tab">
               <Tab className="tb">Images</Tab>
               <Tab className="tb">Movies</Tab>
@@ -128,7 +128,7 @@ const PersonDetailBanner = ({ detail, images, movies, series, loading }) => {
                   })}
               </div>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className={'panel'}>
               <div className="imagesss">
                 {series &&
                   series.map((movie, index) => {

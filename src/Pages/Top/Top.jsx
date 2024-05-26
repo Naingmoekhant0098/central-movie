@@ -32,8 +32,8 @@ const Top = () => {
           The Top One Movie
         </span>
         
-<div>
-<h4 className=" text-sm">{topMovie?.title || topMovie?.original_title
+<div className="">
+<h4 className="">{topMovie?.title || topMovie?.original_title
 }</h4>
 {<Genre ids={topMovie?.genre_ids?.slice(0, 1)}/>}
 </div>
@@ -48,12 +48,12 @@ const Top = () => {
     <span >
         <div className="total">{topMovie?.vote_average.toFixed(0)} 
         <MdPercent className=" topIcon ms-1" /></div>
-        <span className=" botText ">Popularity</span>
+        <span className=" botText ">IMDB</span>
     </span>
     <span className="total">
         <div>{topMovie?.vote_count.toFixed(0)} 
         <FaPlus className=" topIcon ms-1" /></div>
-        <span className=" botText ">Popularity</span>
+        <span className=" botText ">Reviews</span>
     </span>
      
 

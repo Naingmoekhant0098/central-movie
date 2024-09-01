@@ -2,7 +2,7 @@
     width: 120px;
     height: auto;
     cursor: pointer;
-    
+     
 }
 .cast img{
     width: 80px;
@@ -13,16 +13,16 @@
 .castContainer h4 {
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .castContainer{
-    margin: 30px 0px;
+    margin-top: 10px;
     
   }
   .casts{
     width: 100%;
     height: auto;
-  
+  margin-top: -15px;
   }
   .cast .name{
     text-wrap: wrap;

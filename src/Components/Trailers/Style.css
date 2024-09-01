@@ -1,11 +1,13 @@
 .trailersContainer h4{
     font-size: 22px;
     font-weight: 700;
-   margin-bottom: 20px;
+   margin-bottom: 25px;
+  
 
 }
 .trailersContainer{
-    margin: 30px 0px;
+ margin-top: -25px;
+   
 }
 .trailers{
     width: 100%;
@@ -39,7 +41,7 @@
     .trailersContainer h4{
         font-size: 20px;
         
-       margin-bottom: 20px;
+       margin-bottom: 25px;
     
     }
     .trailer .icon{

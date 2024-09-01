@@ -11,9 +11,10 @@ import Top from '../Top/Top'
      <div className='IndexPage'>
       <HeroBanner/>
       <Trending/>
-      <Ads/>
-      <TopRated />
       <Top/>
+      <TopRated />
+      
+      <Ads/>
       <Popular />
      </div>
    )

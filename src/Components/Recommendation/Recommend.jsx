@@ -5,10 +5,10 @@ const Recommend = ({ mediaType, id }) => {
   const { data, loading } = UseFetch(`/${mediaType}/${id}/recommendations`);
 
   return (
-    <div className="recommedationContainer">
+    <div className="recommedationContainer" >
       {data?.total_results > 0 && (
         <div>
-          <h4 className="mt-5">Recommended {mediaType == "movie" ? "Movies" : "Tv Show"}</h4>
+          <h4 className="mt-3">Recommended {mediaType == "movie" ? "Movies" : "Tv Show"}</h4>
           <Carousel endPoint={mediaType} data={data} />
         </div>
       )}

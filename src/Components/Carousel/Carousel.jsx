@@ -9,7 +9,7 @@ import MovieCard from "../MovieCard/MovieCard";
 
 const Carousel = ({ data, endPoint }) => {
   return (
-    <div className="Movies ">
+    <div className="Movies " style={{marginTop : '24px'}}>
       <Swiper
         loop={true}
         navigation={true}

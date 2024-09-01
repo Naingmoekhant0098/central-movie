@@ -27,16 +27,24 @@ const Ads = () => {
         </p>
         <div className="mx-auto btns">
           <button>
-            <span>
-              <FaApple className=" me-2 icon" />
+            <span style={{marginRight : '10px'}}>
+              
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" className="googleButton" />
+
             </span>
-            <span>AppStore</span>
+            <div className=" downloadOn">
+              <span className="dl">Download On</span>
+            <span>Google Play</span>
+            </div>
           </button>
           <button>
-            <span>
-              <FaGooglePlay className=" me-2 icon" />
+          <span style={{marginRight : '10px'}}>
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" className="googleButton" style={{color : 'white'}} />
             </span>
-            <span>GooglePlay</span>
+            <div className=" downloadOn">
+              <span className="dl">Download On</span>
+            <span>AppStore</span>
+            </div>
           </button>
         </div>
       </div>
